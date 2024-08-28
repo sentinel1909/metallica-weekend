@@ -1,0 +1,6 @@
+# metallica weekend Shuttle configuration file
+name = "metallica-weekend"
+
+build_assets = [
+  "static",
+]
