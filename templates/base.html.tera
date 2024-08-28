@@ -18,7 +18,7 @@
         <section>
             <h3>{{ message }}</h3>
             <article>
-                <p>In August 2024, I attended the two Seattle shows of the Metallica M72 tour</p>
+                <p>In August 2024, I attended the two Seattle shows of the Metallica M72 tour. These are my photos!</p>
             </article>
         </section>
     </main>
