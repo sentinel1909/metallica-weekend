@@ -2,26 +2,11 @@
 {% block content %}
 <section>
   <article>
-    <h4>{{ title }}</h4>
-    <h5>Setlist:</h5>
+    <h4>Day 1 Setlist</h4>
       <ul>
-        <li>Creeping Death</li>
-        <li>Harvester of Sorrow</li>
-        <li>Leper Messiah</li>
-        <li>King Nothing</li>
-        <li>72 Seasons</li>
-        <li>If Darkness Had a Son</li>
-        <li>Orca Attack (Kirk and Rob jam)</li>
-        <li>The Day That Never Comes</li>
-        <li>Shadows Follow</li>
-        <li>Orion</li>
-        <li>Kirk Solo</li>
-        <li>Nothing Else Matters</li>
-        <li>Sad But True</li>
-        <li>Blackened</li>
-        <li>Fuel</li>
-        <li>Seek and Destroy</li>
-        <li>Master of Puppets</li>
+        {% for song in set_list %}
+          <li>{{ song }}</li>
+        {% endfor %}
       </ul>
     </article>
   </section>

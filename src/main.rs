@@ -15,7 +15,8 @@ fn health() -> Status {
 // function which returns the index page template
 #[get("/")]
 fn index() -> Template {
-    Template::render("index", context! { title: "Day 1" })
+    let set_list = ["Creeping Death", "Harvester of Sorrow", "Leper Messiah", "King Nothing", "72 Seasons", "If Darkness Had a Son", "Orca Attack (Rob and Kirk jam)", "The Day That Never Comes", "Shadows Follow", "Orion", "Kirk Solo", "Nothing Else Matters", "Sad But True", "Blackened", "Fuel", "Seek and Destroy", "Master of Puppets"];
+    Template::render("index", context! { set_list })
 }
 
 // function to create a rocket instance

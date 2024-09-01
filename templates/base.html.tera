@@ -14,7 +14,7 @@
         <h1>Metallica Weekend</h1>
         <h2>M72 World Tour, Seattle, Washington</h2>
         <h3>August 30th and September 1st, 2024
-        <section class="image-grid">
+        <section class="header-image-grid">
             <img src="assets/IMG_5978.jpg" height="320" width="240" alt="wolf metallica poster" />
             <img src="assets/IMG_5983.jpg" height="320" width="240" alt="james front and centre" />
             <img src="assets/IMG_5984.jpg" height="240" width="320" alt="under the green lights" />
@@ -26,7 +26,7 @@
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> Jeffery D. Mitchell</p>
+        <p>&copy; <span id="year"></span> Jeffery D. Mitchell | Built with <a href="https://rocket.rs" target="_blank" rel="noreferrer">Rocket</a> and hosted on <a href="https://shuttle.rs" target="_blank" rel="noreferrer">Shuttle</a></p>
     </footer>
     <script src="static/scripts.js"></script>
 </body>

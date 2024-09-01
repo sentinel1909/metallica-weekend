@@ -84,7 +84,15 @@ footer {
   color: white;
 }
 
-.image-grid {
+footer a {
+  color: yellow;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+.header-image-grid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,3 +113,11 @@ footer {
 }
 
 /* end main styles */
+
+/* begin media queries */
+
+@media screen and (max-width: 900px) {
+  .header-image-grid {
+    flex-direction: column;
+  }
+}
