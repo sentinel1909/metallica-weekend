@@ -3,6 +3,7 @@
 name = "metallica-weekend"
 
 build_assets = [
+  "assets",
   "static",
   "templates"
 ]

@@ -15,7 +15,7 @@ fn health() -> Status {
 // function which returns the index page template
 #[get("/")]
 fn index() -> Template {
-    Template::render("index", context! { message: "Metallica Rules!" })
+    Template::render("index", context! { title: "Day 1" })
 }
 
 // function to create a rocket instance
@@ -25,6 +25,7 @@ fn create() -> Rocket<Build> {
         .mount("/", routes![index])
         .mount("/api", routes![health])
         .mount("/static", FileServer::from(relative!("static")))
+        .mount("/assets", FileServer::from(relative!("assets")))
 }
 
 // main function

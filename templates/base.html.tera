@@ -9,18 +9,21 @@
     <link rel="stylesheet" type="text/css" href="static/screen.css" media="screen" />
     <link rel="icon" type="image/ico" href="static/favicon.ico" />
 </head>
-<body>
+<body class="stack">
     <header>
         <h1>Metallica Weekend</h1>
-        <h2>Welcome to my site devoted to my weekend with Metallica</h2>
+        <h2>M72 World Tour, Seattle, Washington</h2>
+        <h3>August 30th and September 1st, 2024
+        <section class="image-grid">
+            <img src="assets/IMG_5978.jpg" height="320" width="240" alt="wolf metallica poster" />
+            <img src="assets/IMG_5983.jpg" height="320" width="240" alt="james front and centre" />
+            <img src="assets/IMG_5984.jpg" height="240" width="320" alt="under the green lights" />
+            <img src="assets/IMG_6024.jpg" height="240" width="320" alt="nothing else matters" />
+            <img src="assets/IMG_6032.jpg" height="240" width="320" alt="fuel" />
+        </section>
     </header>
     <main>
-        <section>
-            <h3>{{ message }}</h3>
-            <article>
-                <p>In August 2024, I attended the two Seattle shows of the Metallica M72 tour. These are my photos!</p>
-            </article>
-        </section>
+        {% block content %}{% endblock %}
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Jeffery D. Mitchell</p>

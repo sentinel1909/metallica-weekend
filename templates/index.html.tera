@@ -1,4 +1,28 @@
 {% extends "base" %}
 {% block content %}
-<h1> {{ message }} </h1>
+<section>
+  <article>
+    <h4>{{ title }}</h4>
+    <h5>Setlist:</h5>
+      <ul>
+        <li>Creeping Death</li>
+        <li>Harvester of Sorrow</li>
+        <li>Leper Messiah</li>
+        <li>King Nothing</li>
+        <li>72 Seasons</li>
+        <li>If Darkness Had a Son</li>
+        <li>Orca Attack (Kirk and Rob jam)</li>
+        <li>The Day That Never Comes</li>
+        <li>Shadows Follow</li>
+        <li>Orion</li>
+        <li>Kirk Solo</li>
+        <li>Nothing Else Matters</li>
+        <li>Sad But True</li>
+        <li>Blackened</li>
+        <li>Fuel</li>
+        <li>Seek and Destroy</li>
+        <li>Master of Puppets</li>
+      </ul>
+    </article>
+  </section>
 {% endblock content %}
