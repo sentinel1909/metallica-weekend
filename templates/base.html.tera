@@ -14,12 +14,12 @@
         <h1>Metallica Weekend</h1>
         <h2>M72 World Tour, Seattle, Washington</h2>
         <h3>August 30th and September 1st, 2024
-        <section class="header-image-grid">
-            <img src="assets/IMG_5978.jpg" height="320" width="240" alt="wolf metallica poster" />
-            <img src="assets/IMG_5983.jpg" height="320" width="240" alt="james front and centre" />
-            <img src="assets/IMG_5984.jpg" height="240" width="320" alt="under the green lights" />
-            <img src="assets/IMG_6024.jpg" height="240" width="320" alt="nothing else matters" />
-            <img src="assets/IMG_6032.jpg" height="240" width="320" alt="fuel" />
+        <section class="grid">
+            <img src="assets/IMG_5978.jpg" alt="wolf metallica poster" />
+            <img src="assets/IMG_5983.jpg" alt="james front and centre" />
+            <img src="assets/IMG_5984.jpg" alt="under the green lights" />
+            <img src="assets/IMG_6024.jpg" alt="nothing else matters" />
+            <img src="assets/IMG_6032.jpg" alt="fuel" />
         </section>
     </header>
     <main>
