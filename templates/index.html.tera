@@ -4,7 +4,15 @@
   <article>
     <h4>Day 1 Setlist</h4>
       <ul>
-        {% for song in set_list %}
+        {% for song in set_lists.0 %}
+          <li>{{ song }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article>
+    <h4>Day 2 Setlist</h4>
+      <ul>
+        {% for song in set_lists.1 %}
           <li>{{ song }}</li>
         {% endfor %}
       </ul>
