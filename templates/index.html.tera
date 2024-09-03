@@ -2,6 +2,7 @@
 {% block content %}
 <section class="grid">
   <article class="box">
+    <p>Opening Bands: Mammoth and Pantera</p>
     <h4>August 30th Setlist</h4>
       <ul>
         {% for song in set_lists.0 %}
@@ -10,6 +11,7 @@
       </ul>
   </article>
   <article class="box">
+    <p>Opening Bands: Ice Nine Kills and Five Finger Death Punch</p>
     <h4>September 1st Setlist</h4>
       <ul>
         {% for song in set_lists.1 %}
