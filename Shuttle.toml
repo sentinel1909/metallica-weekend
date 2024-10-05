@@ -1,6 +1,6 @@
-# metallica weekend Shuttle configuration file
+# metallica-seattle-2024 Shuttle configuration file
 
-name = "metallica-weekend"
+name = "metallica-seattle-2024"
 
 build_assets = [
   "assets",
