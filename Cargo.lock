@@ -251,8 +251,10 @@ checksum = "a21f936df1771bf62b77f047b726c4625ff2e8aa607c01ec06e5a05bd8463401"
 dependencies = [
  "android-tzdata",
  "iana-time-zone",
+ "js-sys",
  "num-traits",
  "serde",
+ "wasm-bindgen",
  "windows-targets 0.52.6",
 ]
 
@@ -276,16 +278,6 @@ dependencies = [
  "parse-zoneinfo",
  "phf",
  "phf_codegen",
-]
-
-[[package]]
-name = "colored"
-version = "2.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cbf2150cce219b664a8a70df7a1f933836724b503f8a413af9365b4dcc4d90b8"
-dependencies = [
- "lazy_static",
- "windows-sys 0.48.0",
 ]
 
 [[package]]
@@ -2145,8 +2137,9 @@ checksum = "0fda2ff0d084019ba4d7c6f371c95d8fd75ce3524c3cb8fb653a3023f6323e64"
 
 [[package]]
 name = "shuttle-api-client"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "166fbe3022a11ff3f9f771b673f9e39578dec9274a406ff278ed9ee620272e0a"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2167,8 +2160,9 @@ dependencies = [
 
 [[package]]
 name = "shuttle-codegen"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e60a2db8b8548a2a725316ae5d7a04b4dad680a4746372d1b7172f2065f9c345"
 dependencies = [
  "proc-macro-error",
  "proc-macro2",
@@ -2178,8 +2172,9 @@ dependencies = [
 
 [[package]]
 name = "shuttle-common"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "89c694264eba4a286c85f9cc27f0059232fb4863cb668a11286e6b93e879a4d5"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2200,6 +2195,7 @@ dependencies = [
  "tracing",
  "tracing-opentelemetry",
  "tracing-subscriber",
+ "typeshare",
  "url",
  "uuid",
  "zeroize",
@@ -2207,8 +2203,9 @@ dependencies = [
 
 [[package]]
 name = "shuttle-proto"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "51d322a55314553aad71cd506451b817bec1d2ef5459d939f5642b472870c1e9"
 dependencies = [
  "futures-core",
  "prost",
@@ -2219,8 +2216,9 @@ dependencies = [
 
 [[package]]
 name = "shuttle-rocket"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d692712b0d3f7792a7b0d330e6989ebbdfe7709a960e7e44e541d6e2faf9776f"
 dependencies = [
  "rocket",
  "shuttle-runtime",
@@ -2228,12 +2226,12 @@ dependencies = [
 
 [[package]]
 name = "shuttle-runtime"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "20628ddf00446da52c448ef39b987321227195f6393dc6a5066a12fc22491bd3"
 dependencies = [
  "anyhow",
  "async-trait",
- "colored",
  "hyper",
  "serde",
  "serde_json",
@@ -2247,13 +2245,15 @@ dependencies = [
  "tokio-stream",
  "tokio-util",
  "tonic",
+ "tracing",
  "tracing-subscriber",
 ]
 
 [[package]]
 name = "shuttle-service"
-version = "0.47.0"
-source = "git+https://github.com/shuttle-hq/shuttle#090725dabfef15b26fda9023d13f5a28767044c1"
+version = "0.48.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "57770033649fa028aa9cc76702c66eb6c93b47a103f5ad15e2739c6404689bba"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2879,6 +2879,28 @@ name = "typenum"
 version = "1.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "42ff0bf0c66b8238c6f3b578df37d0b7848e55df8577b3f74f92a69acceeb825"
+
+[[package]]
+name = "typeshare"
+version = "1.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "04f17399b76c2e743d58eac0635d7686e9c00f48cd4776f00695d9882a7d3187"
+dependencies = [
+ "chrono",
+ "serde",
+ "serde_json",
+ "typeshare-annotation",
+]
+
+[[package]]
+name = "typeshare-annotation"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a615d6c2764852a2e88a4f16e9ce1ea49bb776b5872956309e170d63a042a34f"
+dependencies = [
+ "quote",
+ "syn 2.0.76",
+]
 
 [[package]]
 name = "ubyte"
